@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css">
+<script defer src="../js/main.js"></script>
+<title>Listing Management | UIU BookHUB Admin</title></head><body><div class="sidebar-layout">
+<aside class="dashboard-sidebar admin-accent">
+  <div class="side-brand"><a href="../index.html"><img src="../assets/logo.png" alt="UIU BookHUB"></a></div>
+  <nav class="side-nav"><div class="side-label">Admin Panel</div><a class="" href="dashboard.html"><i class="fa-solid fa-chart-pie"></i>Dashboard</a><a class="active" href="listings.html"><i class="fa-solid fa-clipboard-check"></i>Listing Management</a></nav>
+  <div class="side-bottom"><a href="../index.html"><i class="fa-solid fa-house"></i> Public Website</a><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
+</aside><main class="dashboard-main"><header class="dashboard-topbar"><div class="topbar-title"><h1>Listing Management</h1><p>Approve, reject and review student listings</p></div><div class="topbar-right"><div class="notification"><i class="fa-regular fa-bell"></i><span class="dot"></span></div><div class="user-mini"><div class="avatar">AD</div><div><strong>Admin</strong><span>UIU BookHUB</span></div></div></div></header><div class="dashboard-content">
+<div class="notice"><i class="fa-solid fa-shield-halved"></i> Review the item's photos, course information and condition disclosure before approving it.</div>
+<div class="panel">
+  <div class="panel-head"><div><h2>Listing Management</h2><p>Approve or reject student listings.</p></div><span class="status pending">27 Pending</span></div>
+  <div class="approval-card" style="padding:15px 0;border-top:1px solid #eee;">
+    <img class="approval-image" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=300">
+    <div><h3>Database System Concepts</h3><p><strong>Seller:</strong> Rahat M.</p><p><strong>Course:</strong> CSE 311 &nbsp; <strong>Price:</strong> ৳650</p><p><strong>Condition:</strong> Good — minor highlighting disclosed.</p><p style="color:#16834B;font-size:10px;"><i class="fa-solid fa-check"></i> Photos uploaded • Course information provided</p></div>
+    <div class="approval-actions"><button class="btn btn-primary btn-sm" data-toast="Listing approved">Approve</button><button class="btn btn-danger btn-sm" data-toast="Listing rejected">Reject</button></div>
+  </div>
+  <div class="approval-card" style="padding:15px 0;border-top:1px solid #eee;">
+    <img class="approval-image" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=300">
+    <div><h3>Computer Networks</h3><p><strong>Seller:</strong> Saima A.</p><p><strong>Course:</strong> CSE 421 &nbsp; <strong>Price:</strong> ৳900</p><p><strong>Condition:</strong> Like New — no major damage disclosed.</p><p style="color:#16834B;font-size:10px;"><i class="fa-solid fa-check"></i> Photos uploaded • Course information provided</p></div>
+    <div class="approval-actions"><button class="btn btn-primary btn-sm" data-toast="Listing approved">Approve</button><button class="btn btn-danger btn-sm" data-toast="Listing rejected">Reject</button></div>
+  </div>
+  <div class="approval-card" style="padding:15px 0;border-top:1px solid #eee;">
+    <img class="approval-image" src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=300">
+    <div><h3>Object Oriented Programming Notes</h3><p><strong>Seller:</strong> Tanvir H.</p><p><strong>Course:</strong> CSE 213 &nbsp; <strong>Price:</strong> ৳300</p><p><strong>Condition:</strong> Good — handwritten notes.</p><p style="color:#16834B;font-size:10px;"><i class="fa-solid fa-check"></i> Course information provided</p></div>
+    <div class="approval-actions"><button class="btn btn-primary btn-sm" data-toast="Listing approved">Approve</button><button class="btn btn-danger btn-sm" data-toast="Listing rejected">Reject</button></div>
+  </div>
+</div>
+<div class="panel table-panel"><div class="panel-head"><div><h2>All Listings</h2><p>Simple listing overview.</p></div></div>
+<table class="dashboard-table"><thead><tr><th>Item</th><th>Seller</th><th>Course</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td>Database System Concepts</td><td>Rahat M.</td><td>CSE 311</td><td><span class="status pending">Pending</span></td><td><button class="btn btn-outline btn-sm" data-toast="Listing opened">View</button></td></tr>
+<tr><td>Engineering Mathematics</td><td>Fariha R.</td><td>MAT 101</td><td><span class="status available">Approved</span></td><td><button class="btn btn-outline btn-sm" data-toast="Listing opened">View</button></td></tr>
+<tr><td>Marketing Fundamentals</td><td>Mitu S.</td><td>BBA 201</td><td><span class="status rejected">Rejected</span></td><td><button class="btn btn-outline btn-sm" data-toast="Listing opened">View</button></td></tr>
+</tbody></table></div>
+</div></main></div><div class="toast"></div></body></html>
