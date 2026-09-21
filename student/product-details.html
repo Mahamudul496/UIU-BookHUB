@@ -1,0 +1,159 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css">
+<link rel="stylesheet" href="../css/dashboard.css">
+<script defer src="../js/main.js"></script>
+<title>Product Details | UIU BookHUB</title>
+</head>
+<body>
+<div class="sidebar-layout">
+  <aside class="dashboard-sidebar">
+    <div class="side-brand"><a href="../index.html"><img src="../assets/logo.png" alt="UIU BookHUB"></a></div>
+    <nav class="side-nav">
+      <div class="side-label">Student Area</div>
+      <a href="dashboard.html"><i class="fa-solid fa-chart-pie"></i>Dashboard</a>
+      <a class="active" href="marketplace.html"><i class="fa-solid fa-store"></i>Marketplace</a>
+      <a href="add-listing.html"><i class="fa-solid fa-plus-circle"></i>Add Listing</a>
+      <a href="my-listings.html"><i class="fa-solid fa-book"></i>My Listings</a>
+      <a href="wishlist.html"><i class="fa-solid fa-heart"></i>Wishlist</a>
+      <a href="messages.html"><i class="fa-solid fa-comments"></i>Messages</a>
+      <a href="purchases.html"><i class="fa-solid fa-cart-shopping"></i>My Purchases</a>
+      <a href="profile.html"><i class="fa-solid fa-user"></i>Profile</a>
+    </nav>
+    <div class="side-bottom">
+      <a href="../index.html"><i class="fa-solid fa-house"></i>Public Website</a>
+      <a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i>Logout</a>
+    </div>
+  </aside>
+
+  <main class="dashboard-main">
+    <header class="dashboard-topbar">
+      <div class="topbar-title"><h1>Marketplace Item</h1><p>Book details and seller information</p></div>
+      <div class="topbar-right">
+        <div class="notification"><i class="fa-regular fa-bell"></i><span class="dot"></span></div>
+        <div class="user-mini"><div class="avatar">MH</div><div><strong>Mahamudul Hasan</strong><span>UIU Student</span></div></div>
+      </div>
+    </header>
+
+    <div class="dashboard-content">
+      <div class="panel" style="padding:28px;">
+        <div class="breadcrumb" style="margin-bottom:22px;"><a href="marketplace.html" style="color:#FF6B00;">Marketplace</a> / Database System Concepts</div>
+
+        <div class="detail-grid">
+          <div>
+            <div class="gallery-main">
+              <img src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=700" alt="Database System Concepts">
+            </div>
+          </div>
+
+          <div class="detail-info">
+            <span class="status available">Available</span>
+            <h1>Database System Concepts</h1>
+            <p class="detail-course">CSE 311 • Computer Science & Engineering</p>
+            <div class="detail-price">৳650</div>
+            <div class="rating">★ 4.8 <span style="color:#777;font-weight:500;">seller rating</span></div>
+
+            <div class="detail-actions">
+              <button type="button" class="btn btn-primary btn-large" data-toast="Request sent successfully. Seller will contact you soon."><i class="fa-solid fa-cart-shopping"></i> Request to Buy</button>
+              <button type="button" class="btn btn-outline btn-large" data-toast="Added to wishlist"><i class="fa-regular fa-heart"></i> Wishlist</button>
+            </div>
+
+            <div class="info-list">
+              <div class="info-row"><span>Condition</span><span>Good</span></div>
+              <div class="info-row"><span>Edition</span><span>7th Edition</span></div>
+              <div class="info-row"><span>Type</span><span>Textbook</span></div>
+              <div class="info-row"><span>Availability</span><span style="color:#16834B;">Available</span></div>
+            </div>
+
+            <div class="seller-box">
+              <div class="avatar">RM</div>
+              <div style="flex:1;"><h4>Rahat M.</h4><p>UIU Student • ★ 4.8 • 12 completed sales</p></div>
+              <a href="#" class="btn btn-outline btn-sm" data-toast="Chat opened">Chat</a>
+            </div>
+
+            <p style="font-size:11px;color:#777;margin-top:10px;">Seller contact details are visible to students in this section.</p>
+          </div>
+        </div>
+
+        <div class="detail-description">
+          <h2>Description</h2>
+          <p>Used for one trimester. Pages are clean and the book is suitable for CSE 311 students. Minor highlighting may be present. Seller has disclosed the condition for admin review.</p>
+        </div>
+      </div>
+
+      <section class="section" style="background:#FAFAFA;padding-top:28px; margin-top:20px;">
+        <div class="container" style="padding:0;">
+          <div class="section-header"><div><h2>More Listings</h2><p>Other books you may like.</p></div></div>
+          <div class="grid grid-4">
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=700" alt="Computer Networks">
+                <span class="status available">Like New</span>
+                <button class="wish" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta"><span class="course">CSE 421</span><span class="dept">CSE</span></div>
+                <h3 class="product-title"><a href="product-details.html">Computer Networks</a></h3>
+                <div class="seller-line"><span class="rating">★ 5.0</span><span>by Saima A.</span></div>
+                <div class="product-bottom"><span class="price">৳900</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=700" alt="Object Oriented Programming">
+                <span class="status sold">Used</span>
+                <button class="wish" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta"><span class="course">CSE 213</span><span class="dept">CSE</span></div>
+                <h3 class="product-title"><a href="product-details.html">Object Oriented Programming</a></h3>
+                <div class="seller-line"><span class="rating">★ 4.5</span><span>by Tanvir H.</span></div>
+                <div class="product-bottom"><span class="price">৳500</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=700" alt="Engineering Mathematics">
+                <span class="status available">Good</span>
+                <button class="wish" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta"><span class="course">MAT 101</span><span class="dept">GED</span></div>
+                <h3 class="product-title"><a href="product-details.html">Engineering Mathematics</a></h3>
+                <div class="seller-line"><span class="rating">★ 4.7</span><span>by Fariha R.</span></div>
+                <div class="product-bottom"><span class="price">৳400</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+              </div>
+            </article>
+
+            <article class="product-card">
+              <div class="product-image">
+                <img src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&q=80&w=700" alt="Data Structures & Algorithms">
+                <span class="status available">Good</span>
+                <button class="wish" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
+              </div>
+              <div class="product-body">
+                <div class="product-meta"><span class="course">CSE 221</span><span class="dept">CSE</span></div>
+                <h3 class="product-title"><a href="product-details.html">Data Structures & Algorithms</a></h3>
+                <div class="seller-line"><span class="rating">★ 4.9</span><span>by Nafis K.</span></div>
+                <div class="product-bottom"><span class="price">৳700</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+</div>
+<div class="toast"></div>
+</body>
+</html>
