@@ -1,0 +1,42 @@
+
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css">
+<script defer src="../js/main.js"></script>
+<title>Add Listing | UIU BookHUB</title></head><body>
+<div class="sidebar-layout">
+<aside class="dashboard-sidebar">
+  <div class="side-brand"><a href="../index.html"><img src="../assets/logo.png" alt="UIU BookHUB"></a></div>
+  <nav class="side-nav"><div class="side-label">Student Area</div><a class="" href="dashboard.html"><i class="fa-solid fa-chart-pie"></i>Dashboard</a><a class="" href="marketplace.html"><i class="fa-solid fa-store"></i>Marketplace</a><a class="active" href="add-listing.html"><i class="fa-solid fa-plus-circle"></i>Add Listing</a><a class="" href="my-listings.html"><i class="fa-solid fa-book"></i>My Listings</a><a class="" href="wishlist.html"><i class="fa-solid fa-heart"></i>Wishlist</a><a class="" href="messages.html"><i class="fa-solid fa-comments"></i>Messages</a><a class="" href="purchases.html"><i class="fa-solid fa-cart-shopping"></i>My Purchases</a><a class="" href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></nav>
+  <div class="side-bottom"><a href="../index.html"><i class="fa-solid fa-house"></i> Public Website</a><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
+</aside><main class="dashboard-main">
+<header class="dashboard-topbar">
+  <div class="topbar-title"><h1>Add Listing</h1><p>List a textbook, note or manual for sale</p></div>
+  <div class="topbar-right"><div class="notification"><i class="fa-regular fa-bell"></i><span class="dot"></span></div><div class="user-mini"><div class="avatar">MH</div><div><strong>Mahamudul Hasan</strong><span>UIU Student</span></div></div></div>
+</header><div class="dashboard-content">
+<div class="listing-page">
+  <div class="notice"><i class="fa-solid fa-shield-halved"></i> Your listing will be reviewed by the admin before it becomes visible in the public marketplace.</div>
+  <form class="demo-form" data-message="Listing submitted for admin approval.">
+    <div class="form-panel"><h2>Basic Information</h2><p>Tell students what you are offering.</p>
+      <div class="form-grid">
+        <div class="form-group"><label>Book / Note Title *</label><input class="form-control" placeholder="e.g. Database System Concepts" required></div>
+        <div class="form-group"><label>Course Code *</label><input class="form-control" placeholder="e.g. CSE 311" required></div>
+        <div class="form-group"><label>Department *</label><select class="form-control"><option>CSE</option><option>EEE</option><option>BBA</option><option>Economics</option><option>English</option><option>GED</option></select></div>
+        <div class="form-group"><label>Subject *</label><input class="form-control" placeholder="e.g. Database Management"></div>
+        <div class="form-group"><label>Type</label><select class="form-control"><option>Textbook</option><option>Lecture Notes</option><option>Lab Manual</option><option>Other Notes</option></select></div>
+        <div class="form-group"><label>Condition *</label><select class="form-control"><option>Like New</option><option>Good</option><option>Used</option></select></div>
+        <div class="form-group"><label>Price (BDT) *</label><input class="form-control" type="number" placeholder="650" required></div>
+        <div class="form-group"><label>Edition / Author</label><input class="form-control" placeholder="Optional"></div>
+        <div class="form-group form-full"><label>Description</label><textarea class="form-control" placeholder="Describe the condition, highlighting, missing pages, included materials, etc."></textarea></div>
+      </div>
+    </div>
+    <div class="form-panel"><h2>Photos</h2><p>Add clear photos so buyers can understand the condition.</p>
+      <div class="upload-box"><i class="fa-solid fa-cloud-arrow-up"></i><p>Drag & drop photos here or choose files</p><button type="button" class="btn btn-outline btn-sm" data-toast="Demo file picker opened">Choose Photos</button></div>
+    </div>
+    <div class="form-actions"><a href="dashboard.html" class="btn btn-outline">Cancel</a><button class="btn btn-primary" type="submit">Submit Listing</button></div>
+  </form>
+</div>
+</div></main></div><div class="toast"></div></body></html>
