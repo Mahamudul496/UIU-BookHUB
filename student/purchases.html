@@ -1,0 +1,25 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css">
+<script defer src="../js/main.js"></script>
+<title>My Purchases | UIU BookHUB</title></head><body>
+<div class="sidebar-layout">
+<aside class="dashboard-sidebar">
+  <div class="side-brand"><a href="../index.html"><img src="../assets/logo.png" alt="UIU BookHUB"></a></div>
+  <nav class="side-nav"><div class="side-label">Student Area</div><a class="" href="dashboard.html"><i class="fa-solid fa-chart-pie"></i>Dashboard</a><a class="" href="marketplace.html"><i class="fa-solid fa-store"></i>Marketplace</a><a class="" href="add-listing.html"><i class="fa-solid fa-plus-circle"></i>Add Listing</a><a class="" href="my-listings.html"><i class="fa-solid fa-book"></i>My Listings</a><a class="" href="wishlist.html"><i class="fa-solid fa-heart"></i>Wishlist</a><a class="" href="messages.html"><i class="fa-solid fa-comments"></i>Messages</a><a class="active" href="purchases.html"><i class="fa-solid fa-cart-shopping"></i>My Purchases</a><a class="" href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></nav>
+  <div class="side-bottom"><a href="../index.html"><i class="fa-solid fa-house"></i> Public Website</a><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
+</aside><main class="dashboard-main">
+<header class="dashboard-topbar">
+  <div class="topbar-title"><h1>My Purchases</h1><p>Your buying history and requests</p></div>
+  <div class="topbar-right"><div class="notification"><i class="fa-regular fa-bell"></i><span class="dot"></span></div><div class="user-mini"><div class="avatar">MH</div><div><strong>Mahamudul Hasan</strong><span>UIU Student</span></div></div></div>
+</header><div class="dashboard-content">
+<div class="panel table-panel"><div class="panel-head"><div><h2>My Purchases</h2><p>Items you requested or purchased.</p></div></div>
+<table class="dashboard-table"><thead><tr><th>Item</th><th>Seller</th><th>Price</th><th>Status</th><th>Action</th></tr></thead><tbody>
+<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=120"><div><strong>Computer Networks</strong><span>CSE 421</span></div></div></td><td>Saima A.</td><td>৳900</td><td><span class="status pending">Pending</span></td><td><a href="messages.html" class="btn btn-outline btn-sm">Chat</a></td></tr>
+<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1455885666463-5f0e7b6d1f5b?auto=format&fit=crop&q=80&w=120"><div><strong>Principles of Marketing</strong><span>BBA 201</span></div></div></td><td>Mitu S.</td><td>৳450</td><td><span class="status available">Completed</span></td><td><button class="btn btn-outline btn-sm" data-toast="Rating form opened">Rate</button></td></tr>
+<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1531058020387-3be344556be6?auto=format&fit=crop&q=80&w=120"><div><strong>Data Structures & Algorithms</strong><span>CSE 221</span></div></div></td><td>Nafis K.</td><td>৳700</td><td><span class="status available">Completed</span></td><td><button class="btn btn-outline btn-sm" data-toast="Rating form opened">Rate</button></td></tr>
+</tbody></table></div>
+</div></main></div><div class="toast"></div></body></html>

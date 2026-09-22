@@ -1,0 +1,39 @@
+<!DOCTYPE html><html lang="en"><head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+<link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css">
+<script defer src="../js/main.js"></script>
+<title>Profile | UIU BookHUB</title></head><body>
+<div class="sidebar-layout">
+<aside class="dashboard-sidebar">
+  <div class="side-brand"><a href="../index.html"><img src="../assets/logo.png" alt="UIU BookHUB"></a></div>
+  <nav class="side-nav"><div class="side-label">Student Area</div><a class="" href="dashboard.html"><i class="fa-solid fa-chart-pie"></i>Dashboard</a><a class="" href="marketplace.html"><i class="fa-solid fa-store"></i>Marketplace</a><a class="" href="add-listing.html"><i class="fa-solid fa-plus-circle"></i>Add Listing</a><a class="" href="my-listings.html"><i class="fa-solid fa-book"></i>My Listings</a><a class="" href="wishlist.html"><i class="fa-solid fa-heart"></i>Wishlist</a><a class="" href="messages.html"><i class="fa-solid fa-comments"></i>Messages</a><a class="" href="purchases.html"><i class="fa-solid fa-cart-shopping"></i>My Purchases</a><a class="active" href="profile.html"><i class="fa-solid fa-user"></i>Profile</a></nav>
+  <div class="side-bottom"><a href="../index.html"><i class="fa-solid fa-house"></i> Public Website</a><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
+</aside><main class="dashboard-main">
+<header class="dashboard-topbar">
+  <div class="topbar-title"><h1>Profile</h1><p>Your student account</p></div>
+  <div class="topbar-right"><div class="notification"><i class="fa-regular fa-bell"></i><span class="dot"></span></div><div class="user-mini"><div class="avatar">MH</div><div><strong>Mahamudul Hasan</strong><span>UIU Student</span></div></div></div>
+</header><div class="dashboard-content">
+<div class="profile-grid">
+  <section class="panel profile-card">
+    <div class="profile-big">MH</div><h2>Mahamudul Hasan</h2><p>UIU Student • CSE</p>
+    <div class="rating" style="margin-top:8px;">★ 4.9 <span style="color:#777;font-weight:500;">student rating</span></div>
+    <div class="profile-meta"><div><span>Student ID</span><strong>01123XXXX</strong></div><div><span>Department</span><strong>CSE</strong></div><div><span>Items Sold</span><strong>8</strong></div><div><span>Items Bought</span><strong>6</strong></div></div>
+  </section>
+  <section class="panel">
+    <div class="panel-head"><div><h2>Profile Information</h2><p>Update your basic student information.</p></div></div>
+    <form class="demo-form" data-message="Profile updated successfully.">
+      <div class="form-grid">
+        <div class="form-group"><label>Full Name</label><input class="form-control" value="Mahamudul Hasan"></div>
+        <div class="form-group"><label>Student ID</label><input class="form-control" value="01123XXXX" disabled></div>
+        <div class="form-group"><label>Email</label><input class="form-control" value="student@uiu.ac.bd"></div>
+        <div class="form-group"><label>Phone</label><input class="form-control" value="01XXXXXXXXX"></div>
+        <div class="form-group"><label>Department</label><select class="form-control"><option selected>CSE</option><option>EEE</option><option>BBA</option></select></div>
+      </div>
+      <div class="form-actions"><button class="btn btn-primary">Save Changes</button></div>
+    </form>
+  </section>
+</div>
+</div></main></div><div class="toast"></div></body></html>
