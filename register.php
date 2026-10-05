@@ -1,0 +1,1 @@
+<!DOCTYPE html><html><head><meta charset="UTF-8"><meta http-equiv="refresh" content="0; url=login.php"><title>Redirecting…</title></head><body>No registration needed. <a href="login.php">Login with your Student ID</a>.</body></html>
