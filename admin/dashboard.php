@@ -4,12 +4,13 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="../css/style.css"><link rel="stylesheet" href="../css/dashboard.css">
+<script defer src="../js/api.js"></script>
 <script defer src="../js/main.js"></script>
 <title>Admin Dashboard | UIU BookHUB Admin</title></head><body><div class="sidebar-layout">
 <aside class="dashboard-sidebar admin-accent">
-  <div class="side-brand"><a href="../index.html"><img src="../assets/logo.png" alt="UIU BookHUB"></a></div>
-  <nav class="side-nav"><div class="side-label">Admin Panel</div><a class="active" href="dashboard.html"><i class="fa-solid fa-chart-pie"></i>Dashboard</a><a class="" href="listings.html"><i class="fa-solid fa-clipboard-check"></i>Listing Management</a></nav>
-  <div class="side-bottom"><a href="../index.html"><i class="fa-solid fa-house"></i> Public Website</a><a href="../index.html"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
+  <div class="side-brand"><a href="../index.php"><img src="../assets/logo.png" alt="UIU BookHUB"></a></div>
+  <nav class="side-nav"><div class="side-label">Admin Panel</div><a class="active" href="dashboard.php"><i class="fa-solid fa-chart-pie"></i>Dashboard</a><a class="" href="listings.php"><i class="fa-solid fa-clipboard-check"></i>Listing Management</a></nav>
+  <div class="side-bottom"><a href="../index.php"><i class="fa-solid fa-house"></i> Public Website</a><a href="../index.php"><i class="fa-solid fa-right-from-bracket"></i> Logout</a></div>
 </aside><main class="dashboard-main"><header class="dashboard-topbar"><div class="topbar-title"><h1>Admin Dashboard</h1><p>Simple overview of UIU BookHUB</p></div><div class="topbar-right"><div class="notification"><i class="fa-regular fa-bell"></i><span class="dot"></span></div><div class="user-mini"><div class="avatar">AD</div><div><strong>Admin</strong><span>UIU BookHUB</span></div></div></div></header><div class="dashboard-content">
 <div class="stats-grid">
   <div class="stat-card"><div><p>Total Students</p><h3>1,284</h3><small>Registered accounts</small></div><div class="stat-icon"><i class="fa-solid fa-users"></i></div></div>
@@ -18,11 +19,11 @@
   <div class="stat-card"><div><p>Completed Sales</p><h3>516</h3><small>Demo transactions</small></div><div class="stat-icon"><i class="fa-solid fa-chart-line"></i></div></div>
 </div>
 <div class="two-panel">
-<section class="panel table-panel"><div class="panel-head"><div><h2>Pending Listings</h2><p>Quick review of new submissions.</p></div><a href="listings.html" class="btn btn-primary btn-sm">Review All</a></div>
+<section class="panel table-panel"><div class="panel-head"><div><h2>Pending Listings</h2><p>Quick review of new submissions.</p></div><a href="listings.php" class="btn btn-primary btn-sm">Review All</a></div>
 <table class="dashboard-table"><thead><tr><th>Listing</th><th>Student</th><th>Condition</th><th>Price</th><th>Action</th></tr></thead><tbody>
-<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=120"><div><strong>Database System Concepts</strong><span>CSE 311</span></div></div></td><td>Rahat M.</td><td>Good</td><td>৳650</td><td><a href="listings.html" class="btn btn-outline btn-sm">Review</a></td></tr>
-<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=120"><div><strong>Computer Networks</strong><span>CSE 421</span></div></div></td><td>Saima A.</td><td>Like New</td><td>৳900</td><td><a href="listings.html" class="btn btn-outline btn-sm">Review</a></td></tr>
-<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=120"><div><strong>OOP Notes</strong><span>CSE 213</span></div></div></td><td>Tanvir H.</td><td>Good</td><td>৳300</td><td><a href="listings.html" class="btn btn-outline btn-sm">Review</a></td></tr>
+<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1544716278-ca5e3f4abd8c?auto=format&fit=crop&q=80&w=120"><div><strong>Database System Concepts</strong><span>CSE 311</span></div></div></td><td>Rahat M.</td><td>Good</td><td>৳650</td><td><a href="listings.php" class="btn btn-outline btn-sm">Review</a></td></tr>
+<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1512820790803-83ca734da794?auto=format&fit=crop&q=80&w=120"><div><strong>Computer Networks</strong><span>CSE 421</span></div></div></td><td>Saima A.</td><td>Like New</td><td>৳900</td><td><a href="listings.php" class="btn btn-outline btn-sm">Review</a></td></tr>
+<tr><td><div class="book-cell"><img class="book-thumb" src="https://images.unsplash.com/photo-1532012197267-da84d127e765?auto=format&fit=crop&q=80&w=120"><div><strong>OOP Notes</strong><span>CSE 213</span></div></div></td><td>Tanvir H.</td><td>Good</td><td>৳300</td><td><a href="listings.php" class="btn btn-outline btn-sm">Review</a></td></tr>
 </tbody></table></section>
 <section class="panel"><div class="panel-head"><div><h2>Simple Sales Summary</h2><p>Recent marketplace activity.</p></div></div>
 <div style="margin-bottom:18px"><p style="font-size:11px">This Month</p><h3 style="font-size:28px;margin-top:4px">৳18,450</h3><small style="color:#16834B;font-size:10px">+12% from last month</small></div>
@@ -31,9 +32,9 @@
 </section>
 </div>
 <div class="panel"><div class="panel-head"><div><h2>Admin Tasks</h2><p>Keep the marketplace clean and useful.</p></div></div><div class="quick-links">
-<a class="quick-link" href="listings.html"><i class="fa-solid fa-check"></i><span>Approve Listings</span></a>
-<a class="quick-link" href="listings.html"><i class="fa-solid fa-xmark"></i><span>Reject Listings</span></a>
-<a class="quick-link" href="listings.html"><i class="fa-solid fa-book"></i><span>Manage Listings</span></a>
+<a class="quick-link" href="listings.php"><i class="fa-solid fa-check"></i><span>Approve Listings</span></a>
+<a class="quick-link" href="listings.php"><i class="fa-solid fa-xmark"></i><span>Reject Listings</span></a>
+<a class="quick-link" href="listings.php"><i class="fa-solid fa-book"></i><span>Manage Listings</span></a>
 <a class="quick-link" href="#" data-toast="Demo sales report generated"><i class="fa-solid fa-file-chart-column"></i><span>Generate Report</span></a>
 </div></div>
 </div></main></div><div class="toast"></div></body></html>
