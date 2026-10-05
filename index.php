@@ -8,24 +8,25 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 <link rel="stylesheet" href="css/style.css">
+<script defer src="js/api.js"></script>
 <script defer src="js/main.js"></script>
 <title>UIU BookHUB | Student Marketplace</title></head>
 <body>
 
 <header class="site-navbar">
   <div class="container nav-inner">
-    <a class="brand" href="index.html"><img src="assets/logo.png" alt="UIU BookHUB"></a>
+    <a class="brand" href="index.php"><img src="assets/logo.png" alt="UIU BookHUB"></a>
     <button class="menu-toggle" aria-label="Open menu"><i class="fa-solid fa-bars"></i></button>
     <nav class="nav-links">
-      <a class="active" href="index.html">Home</a>
-      <a class="" href="marketplace.html">Marketplace</a>
-      <a href="index.html#exploreDept">Categories</a>
-      <a href="index.html#how-it-works">How It Works</a>
+      <a class="active" href="index.php">Home</a>
+      <a class="" href="marketplace.php">Marketplace</a>
+      <a href="index.php#exploreDept">Categories</a>
+      <a href="index.php#how-it-works">How It Works</a>
     </nav>
     <div class="nav-actions">
-      <a href="login.html" class="icon-link" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="count">3</span></a>
-      <a href="login.html" class="btn btn-outline login-link">Login</a>
-      <a href="register.html" class="btn btn-primary">Register</a>
+      <a href="login.php" class="icon-link" aria-label="Wishlist"><i class="fa-regular fa-heart"></i><span class="count">3</span></a>
+      <a href="login.php" class="btn btn-outline login-link">Login</a>
+      <a href="login.php" class="btn btn-primary">Get Started</a>
     </div>
   </div>
 </header>
@@ -35,14 +36,14 @@
       <span class="tagline-badge">Official Student Marketplace</span>
       <h1>Find. Buy. Sell.<br><span>Study Smarter.</span></h1>
       <p class="hero-copy">Buy affordable textbooks, lecture notes, and lab manuals directly from fellow UIU students.</p>
-      <form class="hero-search demo-form" data-message="Searching the marketplace...">
+      <form class="hero-search" action="marketplace.php" method="get">
         <i class="fa-solid fa-magnifying-glass"></i>
-        <input type="text" placeholder="Search by book title, course code or subject..." required>
+        <input type="text" name="search" placeholder="Search by book title, course code or subject..." required>
         <button class="btn btn-primary" type="submit">Search</button>
       </form>
       <div class="hero-actions">
-        <a href="marketplace.html" class="btn btn-primary btn-large"><i class="fa-solid fa-store"></i> Browse Marketplace</a>
-        <a href="login.html" class="btn btn-secondary btn-large"><i class="fa-solid fa-plus"></i> Sell Your Book</a>
+        <a href="marketplace.php" class="btn btn-primary btn-large"><i class="fa-solid fa-store"></i> Browse Marketplace</a>
+        <a href="login.php" class="btn btn-secondary btn-large"><i class="fa-solid fa-plus"></i> Sell Your Book</a>
       </div>
     </div>
     <div class="hero-visual">
@@ -63,7 +64,7 @@
 
 <section class="section" id="exploreDept">
   <div class="container">
-    <div class="section-header"><div><h2>Explore By Department</h2><p>Find materials for your UIU courses.</p></div><a class="view-all" href="marketplace.html" style="color:#FF6B00;font-weight:700;font-size:13px;">View Marketplace →</a></div>
+    <div class="section-header"><div><h2>Explore By Department</h2><p>Find materials for your UIU courses.</p></div><a class="view-all" href="marketplace.php" style="color:#FF6B00;font-weight:700;font-size:13px;">View Marketplace →</a></div>
     <div class="grid grid-4">
       <div class="category-card"><div class="category-icon"><i class="fa-solid fa-laptop-code"></i></div><h3>CSE</h3><p>Computer Science & Engineering</p><span class="count">142 Listings</span></div>
       <div class="category-card"><div class="category-icon"><i class="fa-solid fa-microchip"></i></div><h3>EEE</h3><p>Electrical & Electronic Engineering</p><span class="count">88 Listings</span></div>
@@ -79,7 +80,7 @@
 
 <section class="section" style="background:#FAFAFA;">
   <div class="container">
-    <div class="section-header"><div><h2>Recently Added Listings</h2><p>Fresh books and notes from UIU students.</p></div><a class="view-all" href="marketplace.html" style="color:#FF6B00;font-weight:700;font-size:13px;">Browse Full Market →</a></div>
+    <div class="section-header"><div><h2>Recently Added Listings</h2><p>Fresh books and notes from UIU students.</p></div><a class="view-all" href="marketplace.php" style="color:#FF6B00;font-weight:700;font-size:13px;">Browse Full Market →</a></div>
     <div class="grid grid-4">
 <article class="product-card">
   <div class="product-image">
@@ -89,9 +90,9 @@
   </div>
   <div class="product-body">
     <div class="product-meta"><span class="course">CSE 311</span><span class="dept">CSE</span></div>
-    <h3 class="product-title"><a href="product-details.html">Database System Concepts</a></h3>
+    <h3 class="product-title"><a href="product-details.php?id=1">Database System Concepts</a></h3>
     <div class="seller-line"><span class="rating">★ 4.8</span><span>by Rahat M.</span></div>
-    <div class="product-bottom"><span class="price">৳650</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+    <div class="product-bottom"><span class="price">৳650</span><a href="product-details.php?id=1" class="btn btn-outline btn-sm">View Details</a></div>
   </div>
 </article>
 <article class="product-card">
@@ -102,9 +103,9 @@
   </div>
   <div class="product-body">
     <div class="product-meta"><span class="course">CSE 421</span><span class="dept">CSE</span></div>
-    <h3 class="product-title"><a href="product-details.html">Computer Networks</a></h3>
+    <h3 class="product-title"><a href="product-details.php?id=2">Computer Networks</a></h3>
     <div class="seller-line"><span class="rating">★ 5.0</span><span>by Saima A.</span></div>
-    <div class="product-bottom"><span class="price">৳900</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+    <div class="product-bottom"><span class="price">৳900</span><a href="product-details.php?id=2" class="btn btn-outline btn-sm">View Details</a></div>
   </div>
 </article>
 <article class="product-card">
@@ -114,23 +115,23 @@
     <button class="wish" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
   </div>
   <div class="product-body">
-    <div class="product-meta"><span class="course">CSE 213</span><span class="dept">CSE</span></div>
-    <h3 class="product-title"><a href="product-details.html">Object Oriented Programming</a></h3>
+    <div class="product-meta"><span class="course">CSE 221</span><span class="dept">CSE</span></div>
+    <h3 class="product-title"><a href="product-details.php?id=4">Data Structures &amp; Algorithms</a></h3>
     <div class="seller-line"><span class="rating">★ 4.5</span><span>by Tanvir H.</span></div>
-    <div class="product-bottom"><span class="price">৳500</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+    <div class="product-bottom"><span class="price">৳700</span><a href="product-details.php?id=4" class="btn btn-outline btn-sm">View Details</a></div>
   </div>
 </article>
 <article class="product-card">
   <div class="product-image">
-    <img src="https://images.unsplash.com/photo-1629198688000-71f23e745b6e?auto=format&fit=crop&q=80&w=700" alt="Engineering Mathematics">
+    <img src="https://images.unsplash.com/photo-1593340010859-83edd3d6d13f?auto=format&fit=crop&q=80&w=700" alt="Engineering Mathematics">
     <span class="status available">Good</span>
     <button class="wish" aria-label="Wishlist"><i class="fa-regular fa-heart"></i></button>
   </div>
   <div class="product-body">
     <div class="product-meta"><span class="course">MAT 101</span><span class="dept">GED</span></div>
-    <h3 class="product-title"><a href="product-details.html">Engineering Mathematics</a></h3>
+    <h3 class="product-title"><a href="product-details.php?id=3">Engineering Mathematics</a></h3>
     <div class="seller-line"><span class="rating">★ 4.7</span><span>by Fariha R.</span></div>
-    <div class="product-bottom"><span class="price">৳400</span><a href="product-details.html" class="btn btn-outline btn-sm">View Details</a></div>
+    <div class="product-bottom"><span class="price">৳400</span><a href="product-details.php?id=3" class="btn btn-outline btn-sm">View Details</a></div>
   </div>
 </article></div>
   </div>
@@ -153,7 +154,7 @@
     <span class="tagline-badge" style="background:#FF6B00;color:#fff;">For UIU Students</span>
     <h2>Turn Your Old Books Into Extra Cash</h2>
     <p>Finished with a course? List your old books or notes and help another student save money.</p>
-    <a href="login.html" class="btn btn-primary btn-large"><i class="fa-solid fa-plus"></i> Start Selling</a>
+    <a href="login.php" class="btn btn-primary btn-large"><i class="fa-solid fa-plus"></i> Start Selling</a>
   </div></div>
 </section>
 
@@ -161,7 +162,7 @@
   <div class="container"><div class="donation">
     <div class="donation-icon"><i class="fa-solid fa-heart-circle-plus"></i></div>
     <div class="donation-content"><h2>Give Your Books a Second Life</h2><p>Donate old textbooks and notes to junior UIU students.</p></div>
-    <a href="login.html" class="btn btn-secondary btn-large">Donate a Book</a>
+    <a href="donation.php" class="btn btn-secondary btn-large">Donate a Book</a>
   </div></div>
 </section>
 
@@ -178,17 +179,17 @@
         </div>
       </div>
       <div><h4>Marketplace</h4><ul>
-        <li><a href="marketplace.html">Browse Books</a></li>
-        <li><a href="marketplace.html">Notes & Manuals</a></li>
-        <li><a href="marketplace.html">Categories</a></li>
+        <li><a href="marketplace.php">Browse Books</a></li>
+        <li><a href="marketplace.php">Notes & Manuals</a></li>
+        <li><a href="marketplace.php">Categories</a></li>
       </ul></div>
       <div><h4>Account</h4><ul>
-        <li><a href="login.html">Login</a></li>
-        <li><a href="register.html">Register</a></li>
-        <li><a href="login.html">Wishlist</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="login.php">Login</a></li>
+        <li><a href="login.php">Wishlist</a></li>
       </ul></div>
       <div><h4>Help</h4><ul>
-        <li><a href="index.html#how-it-works">How It Works</a></li>
+        <li><a href="index.php#how-it-works">How It Works</a></li>
         <li><a href="#" data-toast="Demo support page">Contact Admin</a></li>
         <li><a href="#" data-toast="Demo report option">Report Listing</a></li>
       </ul></div>
