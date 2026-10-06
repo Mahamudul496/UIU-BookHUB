@@ -67,7 +67,7 @@
 .progress{height:7px;background:#eee;border-radius:99px;overflow:hidden;margin-top:8px}.progress span{display:block;height:100%;background:#FF6B00}
 .notice{padding:11px 13px;border-left:3px solid #FF6B00;background:#FFF8F3;font-size:11px;color:#666;border-radius:4px;margin-bottom:14px}
 
-.listing-page{max-width:980px}
+.listing-page{width:100%;max-width:1440px}
 .form-panel{background:#fff;border:1px solid #E5E5E5;border-radius:9px;padding:23px;margin-bottom:18px}
 .form-panel h2{font-size:18px;margin-bottom:5px}.form-panel>p{font-size:11px;margin-bottom:19px}
 .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
@@ -92,6 +92,8 @@
 .bubble small{display:block;font-size:8px;opacity:.65;margin-top:4px}
 .chat-input{display:flex;gap:7px;padding:12px;border-top:1px solid #E5E5E5}
 .chat-input input{flex:1;border:1px solid #ddd;border-radius:6px;padding:0 10px;height:38px;outline:0}
+#review-modal[hidden],.chat-input[hidden]{display:none}
+.conversation{width:100%;text-align:left;background:transparent;border-left:0;border-right:0;border-top:0;font:inherit}
 
 .profile-grid{display:grid;grid-template-columns:280px 1fr;gap:20px}
 .profile-card{text-align:center}
