@@ -4,30 +4,37 @@
 
 ---
 
-## ✨ Features
+## 🌐 Live Demo
 
-- 🔐 Student & Admin Login
-- 📚 Buy & Sell Books
-- 🔎 Search & Filter Books
-- ❤️ Wishlist
-- 🛒 Purchase Requests
-- 💬 Student-to-Student Chat
-- ⭐ Seller Reviews & Ratings
-- 🎁 Book Donation
-- 👨‍💼 Admin Listing Approval
-- 🖼️ Book Image Upload
+👉 **[Click Here to Visit UIU BookHUB](https://midul-bookhub.free.nf/)**  
+*(Direct URL: `https://midul-bookhub.free.nf/`)*
 
 ---
 
-## 🛠️ Technologies
+## ✨ Features
+
+* 🔐 **Authentication:** Student & Admin Login
+* 📚 **Book Management:** Buy & Sell Academic Books
+* 🎁 **Donation:** Book Donation System
+* 🔎 **Discovery:** Search & Filter Books
+* ❤️ **Wishlist:** Save Books for Later
+* 🛒 **Transactions:** Purchase Requests
+* 💬 **Communication:** Student-to-Student Chat
+* ⭐ **Reputation:** Seller Reviews & Ratings
+* 👨‍💼 **Moderation:** Admin Listing Approval
+* 🖼️ **Media:** Book Image Upload
+
+---
+
+## 🛠️ Technologies Used
 
 | Category | Technology |
 |---|---|
-| Frontend | HTML, CSS, JavaScript |
-| Backend | PHP |
-| Database | MySQL |
-| API | PHP JSON APIs / Fetch API |
-| Server | Apache / XAMPP |
+| **Frontend** | HTML5, CSS3, JavaScript (ES6+) |
+| **Backend** | PHP |
+| **Database** | MySQL |
+| **API** | PHP JSON APIs / Fetch API |
+| **Server** | Apache / XAMPP |
 
 ---
 
@@ -35,14 +42,12 @@
 
 ```text
 UIU-BookHUB/
-├── api/              # Backend API endpoints
-├── admin/            # Admin pages
-├── student/          # Student dashboard & pages
-├── config/           # Database & authentication
-├── css/              # Stylesheets
-
-## LIVE LINK: https://midul-bookhub.free.nf/
-├── js/               # JavaScript files
-├── uploads/          # Uploaded book images
-├── database/         # Database SQL files
-└── index.php         # Homepage
+├── admin/            # Admin dashboard and management pages
+├── api/              # Backend API endpoints (JSON responses)
+├── config/           # Database configuration & auth settings
+├── css/              # Custom stylesheets
+├── database/         # Database SQL files & migrations
+├── js/               # Frontend JavaScript files
+├── student/          # Student dashboard & user pages
+├── uploads/          # Uploaded book cover images
+└── index.php         # Main homepage entry point
